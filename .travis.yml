@@ -1,10 +1,10 @@
 script: 
-  - echo "Running tests ..."
+  # Test
   - docker-compose run backend-app npm test
-  - echo "Tests completed"
-  - echo "Running build ..."
+  # Build
   - docker-compose run backend-app npm run build
-  - echo "Build completed"
+  # Run
+  - docker-compose up backend-app npm start
 services:
   - docker
 
