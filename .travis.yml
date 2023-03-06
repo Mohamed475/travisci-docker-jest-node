@@ -4,7 +4,7 @@ script:
   # Build
   - docker-compose run backend-app npm run build
   # Run
-  - docker-compose up backend-app npm start
+  - docker-compose up backend-app
 services:
   - docker
 
